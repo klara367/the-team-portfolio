@@ -1,15 +1,17 @@
+import "./Description.css"
+
 const Description = ({ demo, details, documentation, images, marketing, name }) => {
     return (
-        <>
+        <section className="desription-wrapper">
             <img src={images} alt="project preview" />
-            <p>{name}</p>
-            <p>{details}</p>
-            <div>
-                <a href={demo}>Demo</a>
-                <a href={documentation}>Dokumentace</a>
-                <a href={marketing}>Marketing</a>
+            <p className="fw-600 name">{name}</p>
+            <p className="details">{details}</p>
+            <div className="btn-wrapper">
+                <a href={demo} className="description-btn">Demo</a>
+                <a href={documentation} className="description-btn">Dokumentace</a>
+                <a href={marketing} className="description-btn">Marketing</a>
             </div>
-        </>
+        </section>
     )
 }
 

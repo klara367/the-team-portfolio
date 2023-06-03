@@ -1,10 +1,10 @@
 header {
-    background-color: #202c37;
+    background-color: var(--secondary-bg-dark-clr);
     padding: 1.5rem 3rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: white;
+    color: var(--white-clr);
     position: sticky;
     top: 0;
 }

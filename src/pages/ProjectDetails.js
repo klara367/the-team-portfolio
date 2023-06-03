@@ -2,6 +2,7 @@ import { useParams } from "react-router-dom"
 import { useState } from "react"
 import data from "../data.json"
 import Modal from "../components/Modal"
+import "./ProjectDetails.css"
 
 const ProjectDetails = () => {
     let { name } = useParams()
@@ -19,38 +20,36 @@ const ProjectDetails = () => {
     }
 
     return (
-        <main>
+        <main className="details-main">
             <section>
                 <h2>{name}</h2>
-                <p>{anotation}</p>
-                <p>{details}</p>
-                <div>
-                    <a href={demo}>Demo</a>
-                    <a href={documentation}>Dokumentace</a>
-                    <a href={marketing}>Marketing</a>
+                <p className="details-anotation">{anotation}</p>
+                <p className="details-p">{details}</p>
+                <div className="btns-wrapper">
+                    <a href={demo} className="details-btn flex-center">Demo</a>
+                    <a href={documentation} className="details-btn flex-center">Dokumentace</a>
+                    <a href={marketing} className="details-btn flex-center">Marketing</a>
                 </div>
             </section>
             <section>
-                <div>
+                <div className="gallery flex-center">
                     {images && images.map((img, index) => {
-                        return <div key={index}>
+                        return <div key={index} className="gallery__img">
                             <img src={img.image} alt={img.title} onClick={() => handleOpenModal(index)}/>
                         </div>
                     })}
                 </div>
-                <div>
-                    {openModal &&
-                        <Modal
-                            imgNumber={imgNumber}
-                            setImgNumber={setImgNumber}
-                            images={images}
-                            image={images[imgNumber].image}
-                            title={images[imgNumber].title}
-                            setOpenModal={setOpenModal}
-                        />}
-                </div>
+                {openModal &&
+                    <Modal
+                        imgNumber={imgNumber}
+                        setImgNumber={setImgNumber}
+                        setOpenModal={setOpenModal}
+                        images={images}
+                        image={images[imgNumber].image}
+                        title={images[imgNumber].title}
+                    />
+                }
             </section>
-
         </main>
     )
 }

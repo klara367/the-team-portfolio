@@ -1,6 +1,13 @@
+import { Link } from "react-router-dom"
+import "./Error.css"
+
 const Error = () => {
     return (
-        <p>Page not found</p>
+        <main className="error-main">
+            <h2>404</h2>
+            <p>Stránka nenalezena</p>
+            <Link to={`/`} className="back-btn">Hlavní strana</Link>
+        </main>
     )
 }
 

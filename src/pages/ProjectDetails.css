@@ -1,0 +1,54 @@
+h2 {
+    font-size: 2rem;
+}
+
+.details-anotation {
+    padding-top: 0.5rem;
+    padding-bottom: 1.5rem;
+}
+  
+.details-p {
+    line-height: 1.5;
+}
+
+.btns-wrapper {
+    padding-top: 3rem;
+}
+
+.details-btn {
+    justify-content: space-between;
+    padding-block: 1.25rem;
+    border-bottom: 1px solid var(--border-light-clr);
+    font-size: 1rem;
+}
+  
+.details-btn:hover,
+.details-btn:active {
+    transform: translateX(0.25rem);
+}
+
+.gallery {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.gallery__img {
+    cursor: pointer;
+    width: 12rem;
+    display: block;
+}
+
+.gallery__img:hover {
+    transform: scale(1.02);
+}
+  
+@media only screen and (max-width: 768px) {
+    .details-main {
+        gap: 5rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+}

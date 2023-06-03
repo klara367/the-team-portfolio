@@ -1,4 +1,5 @@
 import { IoIosArrowBack, IoIosArrowForward, IoMdClose } from "react-icons/io"
+import "./Modal.css"
 
 const Modal = ({ imgNumber, setImgNumber, image, title, images, setOpenModal }) => {
 
@@ -15,13 +16,13 @@ const Modal = ({ imgNumber, setImgNumber, image, title, images, setOpenModal }) 
     }
 
     return (
-        <div>
-            <IoMdClose className='btnClose' onClick={handleCloseModal}  />
-            <IoIosArrowBack  className='btnPrev' onClick={prevImg} />
-            <IoIosArrowForward  className='btnNext' onClick={nextImg} />
-            <div>
-                <img src={image} alt={title} />
-                <p>{title}</p>
+        <div className="modal flex-center">
+            <IoMdClose className='close-btn' onClick={handleCloseModal}  />
+            <IoIosArrowBack  className='prev-btn' onClick={prevImg} />
+            <IoIosArrowForward  className='next-btn' onClick={nextImg} />
+            <div className="fullscreen-img-wrapper flex-center">
+                <img src={image} alt={title} className="fullscreen-img-wrapper__img"/>
+                <p className="fullscreen-img-wrapper__p">{title}</p>
             </div>
         </div>
     )

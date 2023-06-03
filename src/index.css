@@ -12,11 +12,18 @@
     --secondary-bg-light-clr:  #f9fafb;
     --secondary-bg-dark-clr: #202c37;
     --border-light-clr: #e8e8e8;
+
+    --fw-600: 600;
 }
 
 body {
     font-family: 'Open Sans', sans-serif;
-    color: var(--txt);
+    color: var(--primary-text-dark-clr);
+}
+
+.flex-center {
+    display: flex;
+    align-items: center;
 }
 
 main {
@@ -28,9 +35,14 @@ main {
     background-color: var(--white-clr);
 }
 
+.fw-600 {
+    font-weight: var(--fw-600);
+}
+
 a {
     text-decoration: none;
-    color: var(--txt);
+    font-size: 0.9rem;
+    color: var(--secondary-text-lighter-clr);
 }
   
 @media only screen and (max-width: 768px) {

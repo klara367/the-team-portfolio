@@ -1,0 +1,64 @@
+.modal {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.85);
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.fullscreen-img-wrapper {
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.fullscreen-img-wrapper__img {
+    width: 80%;
+    height: 80%;
+    pointer-events: none;
+    user-select: none;
+}
+
+.fullscreen-img-wrapper__p {
+    color: var(--white-clr);
+    padding-top: 1rem;
+}
+
+.close-btn, .prev-btn, .next-btn {
+    position: absolute;
+    cursor: pointer;
+    opacity: 0.8;
+    color: var(--white-clr);
+    z-index: 1000;
+    width: 1.5rem;
+    height: 1.5rem;
+}
+  
+.next-btn:hover, .prev-btn:hover, .close-btn:hover {
+  opacity: 1;
+}
+  
+.close-btn {
+    top: 40px;
+    right: 40px;
+}
+
+.prev-btn, .next-btn {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.prev-btn {
+    left: 2.5rem;
+}
+  
+.next-btn {
+    right: 2.5rem;
+}

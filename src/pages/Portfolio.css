@@ -1,0 +1,28 @@
+article {
+  justify-content: space-between;
+  padding-block: 1.25rem;
+  border-bottom: 1px solid var(--border-light-clr);
+  cursor: pointer;
+}
+
+article:hover,
+article:active {
+  transform: scale(1.02);
+}
+
+.anotation {
+  color: var(--secondary-text-lighter-clr);
+  font-size: 0.9rem;
+  padding-top: 0.15rem;
+}
+
+.detail-link:hover,
+.detail-link:active {
+  color: var(--accent-clr);
+}
+
+@media only screen and (max-width: 768px) {
+  .portfolio-main {
+    gap: 1rem;
+  }
+}
