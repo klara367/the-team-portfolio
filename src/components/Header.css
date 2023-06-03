@@ -1,0 +1,28 @@
+header {
+    background-color: #202c37;
+    padding: 1.5rem 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    position: sticky;
+    top: 0;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+@media only screen and (max-width: 768px) {
+    header  {
+      padding: 1.5rem 2rem;
+    }
+  
+    h1 {
+      font-size: 1.5rem;
+    }
+    
+    .logo {
+      width: 25vw;
+    }
+}
