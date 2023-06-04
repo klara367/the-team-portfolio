@@ -20,10 +20,9 @@
 }
 
 .fullscreen-img-wrapper__img {
-    width: 80%;
-    height: 80%;
     pointer-events: none;
     user-select: none;
+    padding-inline: 1rem;
 }
 
 .fullscreen-img-wrapper__p {
@@ -52,7 +51,7 @@
 
 .prev-btn, .next-btn {
     top: 50%;
-    transform: translateY(-50%);
+    transform: translateY(-100%);
 }
 
 .prev-btn {
