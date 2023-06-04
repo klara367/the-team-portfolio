@@ -1,6 +1,7 @@
 .gallery-flex{
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 h2 {
@@ -51,9 +52,14 @@ h2 {
 @media only screen and (max-width: 768px) {
     .details-main {
         gap: 5rem;
+        grid-template-rows: 1fr 0.45fr;
     }
 
     h2 {
         font-size: 1.5rem;
+    }
+
+    .gallery__img {
+        width: 8rem;
     }
 }

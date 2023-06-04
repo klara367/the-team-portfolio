@@ -48,7 +48,6 @@ a {
 @media only screen and (max-width: 768px) {
     main {
       grid-template-columns: 1fr;
-      grid-template-rows: 0.85fr 1fr;
       padding: 2rem;
     }
 }

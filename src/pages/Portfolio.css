@@ -24,6 +24,7 @@ article:active {
 @media only screen and (max-width: 768px) {
   .portfolio-main {
     gap: 1rem;
+    grid-template-rows: 0.85fr 1fr;
   }
 
   .anotation {
