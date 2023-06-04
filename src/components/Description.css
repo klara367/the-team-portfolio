@@ -39,3 +39,16 @@ img {
 .description-btn:active {
   box-shadow: 0 0 0.5rem 0.1rem var(--border-light-clr);
 }
+
+@media only screen and (max-width: 768px) {
+    .btn-wrapper {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .description-btn {
+        text-align: center;
+        width:90%;
+    }
+}
