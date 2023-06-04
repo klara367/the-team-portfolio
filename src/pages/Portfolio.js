@@ -21,10 +21,10 @@ const Portfolio = () => {
                 {data.map((project, index) => {
                     const { name, anotation } = project
                     return <article onMouseOver={() => handleClick(index)} key={name} className="flex-center">
-                        <div>
+                        <a href="#description">
                             <p className="fw-600">{name}</p>
                             <p className="anotation">{anotation}</p>
-                        </div>
+                        </a>
                         <Link to={`/details/${name}`} className="detail-link">Detaily</Link>
                     </article>
                 })} 
