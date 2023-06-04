@@ -35,4 +35,8 @@ article:active {
   article:active {
     transform: none;
   }
+
+  .p-mobile-width {
+    width: 15rem;
+  }
 }

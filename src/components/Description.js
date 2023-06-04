@@ -3,7 +3,7 @@ import "./Description.css"
 const Description = ({ demo, details, documentation, images, marketing, name }) => {
     return (
         <section id="description">
-            <div className="desription-wrapper">
+            <div className="description-wrapper">
                 <img src={images} alt="project preview" />
                 <p className="fw-600 name">{name}</p>
                 <p className="details">{details}</p>
