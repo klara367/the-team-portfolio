@@ -31,7 +31,7 @@ const ProjectDetails = () => {
                     <a href={marketing} className="details-btn flex-center">Marketing</a>
                 </div>
             </section>
-            <section>
+            <section className="gallery-flex">
                 <div className="gallery flex-center">
                     {images && images.map((img, index) => {
                         return <div key={index} className="gallery__img">

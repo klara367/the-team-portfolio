@@ -25,4 +25,13 @@ article:active {
   .portfolio-main {
     gap: 1rem;
   }
+
+  .anotation {
+    display: none;
+  }
+
+  article:hover,
+  article:active {
+    transform: none;
+  }
 }

@@ -10,7 +10,7 @@
     --accent-clr: #a9110e;
     --white-clr: #fff;
     --secondary-bg-light-clr:  #f9fafb;
-    --secondary-bg-dark-clr: #202c37;
+    --secondary-bg-dark-clr: #282d33;
     --border-light-clr: #e8e8e8;
 
     --fw-600: 600;
@@ -48,7 +48,7 @@ a {
 @media only screen and (max-width: 768px) {
     main {
       grid-template-columns: 1fr;
-      grid-template-rows: 1fr 1fr;
+      grid-template-rows: 0.75fr 1fr;
       padding: 2rem;
     }
 }
