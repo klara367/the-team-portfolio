@@ -18,8 +18,7 @@ html {
     padding-top: 2rem;
 }
   
-img {
-    max-width: 100%;
+.description-wrapper img {
     border-radius: 3px;
 }
   

@@ -1,23 +1,51 @@
 [ 
     {
         "name": "TeamFleet",
-        "anotation": "Aplikace pro Predictive Maintenance Management",
-        "details": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nulla quis diam. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Maecenas libero. Fusce dui leo, imperdiet in, aliquam sit amet, feugiat eu, orci. Duis sapien nunc, commodo et, interdum suscipit, sollicitudin et, dolor.",
+        "anotation": "Aplikace, která pomáhá udržovat vozidla v co nejlepším technickém stavu a současně optimalizovat náklady na servis.",
+        "details": 
+            {"description": "Aplikace zajišťuje monitorování technického stavu vozidel, řízení a plánování pravidelných i nepravidelných oprav a provázání na sklad náhradních dílů. Analytické funkce umožňují optimalizaci plánu budoucích oprav s ohledem na optimální nakládání s náhradními díly.",
+            "properties": ["Modulární architektura", "Přizpůsobení požadavkům", "Připraveno pro integraci", "Silná podpora" ],
+            "modules": ["Karta vozidla", "Vedení knihy závad", "Kniha servisních činností", "Pokročilé plánování servisních zásahů", "Vazba na sklad náhradních dílů", "Analytické nástroje"],
+            "target_group": "Primární cílovou skupinou jsou společnosti zajišťující provozování vozidel hromadné dopravy.",
+            "roles": [
+                {"title": "Správce vozového parku",
+                "benefits": ["Přehled o aktuálním stavu vozidel", "Minimalizace počtu nedostupných vozidel", "Plánování údržby a oprav", "Vedení Knihy závad", "Dlouhodobé statistiky četnosti závad"]},
+                {"title": "Management",
+                "benefits": ["Dostupné informace o aktuálním stavu vozidel", "Predikce požadavků na náhradní díly ", "Snižování nákladů na údržbu", "Dlouhodobé statistiky vozidel, závad a náhradních dílů."]},
+                {"title": "Řidič",
+                "benefits": ["Detailní přehled o technickém stavu přiděleného vozidla"]}
+
+            ]
+            },
         "documentation": "#",
         "demo": "#",
         "marketing": "#",
         "images": [
-            {"image": "https://placehold.co/600x400", "title": "image-1" },
-            {"image": "https://placehold.co/600x400/gray/white", "title": "image-2" },
-            {"image": "https://placehold.co/600x400/khaki/gray", "title": "image-3" },
-            {"image": "https://placehold.co/600x400/lightblue/white", "title": "image-4" }
+            {"image": "../TeamFleet-img/Bus_Ilustration.jpg", "title": "Autobus" },
+            {"image": "../TeamFleet-img/Maintenance.png", "title": "Údržba" },
+            {"image": "../TeamFleet-img/Open_Issues.png", "title": "Problém" },
+            {"image": "../TeamFleet-img/Vehicle_Detail.png", "title": "Detail vozidla" },
+            {"image": "../TeamFleet-img/Vehicle_Profile.png", "title": "Profil vozidla" },
+            {"image": "../TeamFleet-img/Calendar.png", "title": "Kalendář" },
+            {"image": "../TeamFleet-img/Icons.png", "title": "Ikony" }
         ]
     },
 
     {
         "name": "TeamCount",
         "anotation": "Aplikace pro počítání a kategorizaci objektů",
-        "details": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nulla quis diam. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Maecenas libero. Fusce dui leo, imperdiet in, aliquam sit amet, feugiat eu, orci. Duis sapien nunc, commodo et, interdum suscipit, sollicitudin et, dolor.",
+        "details":
+            {"description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nulla quis diam. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Maecenas libero. Fusce dui leo, imperdiet in, aliquam sit amet, feugiat eu, orci. Duis sapien nunc, commodo et, interdum suscipit, sollicitudin et, dolor.",
+            "properties": [""],
+            "modules": [""],
+            "target_group": "",
+            "roles": [
+                {"title": "",
+                "benefits": [""]},
+                {"title": "",
+                "benefits": [""]}
+            ]
+        },
         "documentation": "#",
         "demo": "#",
         "marketing": "#",
@@ -31,7 +59,18 @@
     {
         "name": "Vlak",
         "anotation": "Pracovní panel pro strojvůdce",
-        "details": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nulla quis diam. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Maecenas libero. Fusce dui leo, imperdiet in, aliquam sit amet, feugiat eu, orci. Duis sapien nunc, commodo et, interdum suscipit, sollicitudin et, dolor.",
+        "details":
+            {"description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nulla quis diam. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Maecenas libero. Fusce dui leo, imperdiet in, aliquam sit amet, feugiat eu, orci. Duis sapien nunc, commodo et, interdum suscipit, sollicitudin et, dolor.",
+            "properties": [""],
+            "modules": [""],
+            "target_group": "",
+            "roles": [
+                {"title": "",
+                "benefits": [""]},
+                {"title": "",
+                "benefits": [""]}
+            ]
+        },
         "documentation": "#",
         "demo": "#",
         "marketing": "#",
@@ -41,7 +80,18 @@
     {
         "name": "Kamery",
         "anotation": "Systém pro dohled a analýzu obrazu",
-        "details": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nulla quis diam. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Maecenas libero. Fusce dui leo, imperdiet in, aliquam sit amet, feugiat eu, orci. Duis sapien nunc, commodo et, interdum suscipit, sollicitudin et, dolor.",
+        "details":
+            {"description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nulla quis diam. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Maecenas libero. Fusce dui leo, imperdiet in, aliquam sit amet, feugiat eu, orci. Duis sapien nunc, commodo et, interdum suscipit, sollicitudin et, dolor.",
+            "properties": [""],
+            "modules": [""],
+            "target_group": "",
+            "roles": [
+                {"title": "",
+                "benefits": [""]},
+                {"title": "",
+                "benefits": [""]}
+            ]
+        },
         "documentation": "#",
         "demo": "#",
         "marketing": "#",
@@ -55,7 +105,17 @@
     {
         "name": "Orbeon",
         "anotation": "Platforma pro práci s formuláři",
-        "details": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nulla quis diam. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Maecenas libero. Fusce dui leo, imperdiet in, aliquam sit amet, feugiat eu, orci. Duis sapien nunc, commodo et, interdum suscipit, sollicitudin et, dolor.",
+        "details":
+            {"description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nulla quis diam. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Maecenas libero. Fusce dui leo, imperdiet in, aliquam sit amet, feugiat eu, orci. Duis sapien nunc, commodo et, interdum suscipit, sollicitudin et, dolor.",
+            "properties": [""],
+            "modules": [""],
+            "target_group": "",
+            "roles": [
+                {"title": "",
+                "benefits": [""]},
+                {"title": "",
+                "benefits": [""]}
+            ]},
         "documentation": "#",
         "demo": "#",
         "marketing": "#",
@@ -69,7 +129,18 @@
     {
         "name": "TeleWim",
         "anotation": "Aplikace pro sběr, zpracování a zobrazení telemetrických dat",
-        "details": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nulla quis diam. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Maecenas libero. Fusce dui leo, imperdiet in, aliquam sit amet, feugiat eu, orci. Duis sapien nunc, commodo et, interdum suscipit, sollicitudin et, dolor.",
+        "details":
+            {"description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nulla quis diam. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Maecenas libero. Fusce dui leo, imperdiet in, aliquam sit amet, feugiat eu, orci. Duis sapien nunc, commodo et, interdum suscipit, sollicitudin et, dolor.",
+            "properties": [""],
+            "modules": [""],
+            "target_group": "",
+            "roles": [
+                {"title": "",
+                "benefits": [""]},
+                {"title": "",
+                "benefits": [""]}
+            ]
+        },
         "documentation": "#",
         "demo": "#",
         "marketing": "#",
@@ -83,7 +154,18 @@
     {
         "name": "The Team",
         "anotation": "Firemní stránky",
-        "details": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nulla quis diam. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Maecenas libero. Fusce dui leo, imperdiet in, aliquam sit amet, feugiat eu, orci. Duis sapien nunc, commodo et, interdum suscipit, sollicitudin et, dolor.",
+        "details":
+            {"description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nulla quis diam. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Maecenas libero. Fusce dui leo, imperdiet in, aliquam sit amet, feugiat eu, orci. Duis sapien nunc, commodo et, interdum suscipit, sollicitudin et, dolor.",
+            "properties": [""],
+            "modules": [""],
+            "target_group": "",
+            "roles": [
+                {"title": "",
+                "benefits": [""]},
+                {"title": "",
+                "benefits": [""]}
+            ]
+        },
         "documentation": "#",
         "demo": "#",
         "marketing": "#",

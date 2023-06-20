@@ -32,7 +32,7 @@ const Portfolio = () => {
             {show &&
                 <Description 
                     demo={demo}
-                    details={details}
+                    details={details.description}
                     documentation={documentation}
                     images={images[0].image}
                     marketing={marketing}

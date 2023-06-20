@@ -1,10 +1,12 @@
 header {
     background-color: var(--secondary-bg-dark-clr);
-    padding: 1.5rem 3rem;
+    padding: 1.2rem 3rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
     color: var(--white-clr);
+    position: sticky;
+    top: 0;
 }
 
 h1 {
@@ -13,7 +15,7 @@ h1 {
 
 @media only screen and (max-width: 768px) {
     header  {
-      padding: 1.5rem 2rem;
+      padding: 1.25rem 2rem;
     }
   
     h1 {

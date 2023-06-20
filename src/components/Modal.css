@@ -16,13 +16,13 @@
     height: 100%;
     justify-content: center;
     flex-direction: column;
-    flex-wrap: wrap;
 }
 
 .fullscreen-img-wrapper__img {
     pointer-events: none;
     user-select: none;
     padding-inline: 1rem;
+    width: 80%;
 }
 
 .fullscreen-img-wrapper__p {
