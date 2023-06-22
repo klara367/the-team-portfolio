@@ -28,6 +28,13 @@
 .fullscreen-img-wrapper__p {
     color: var(--white-clr);
     padding-top: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.download-icon {
+    cursor: pointer;
 }
 
 .close-btn, .prev-btn, .next-btn {
