@@ -22,7 +22,7 @@ const Portfolio = () => {
                     const { name, anotation } = project
                     return <article onMouseOver={() => handleClick(index)} key={name} className="flex-center">
                         <a href="#description">
-                            <p className="fw-600 p-mobile-width">{name}</p>
+                            <p className="fw-600 p-mobile-width product-name">{name}</p>
                             <p className="anotation">{anotation}</p>
                         </a>
                         <Link to={`/details/${name}`} className="detail-link">Detaily</Link>

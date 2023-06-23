@@ -1,5 +1,6 @@
 article {
   justify-content: space-between;
+  gap: 4rem;
   padding-block: 1.25rem;
   border-bottom: 1px solid var(--border-light-clr);
   cursor: pointer;
@@ -8,6 +9,10 @@ article {
 article:hover,
 article:active {
   transform: scale(1.02);
+}
+
+.product-name {
+  font-size: 1rem;
 }
 
 .anotation {
