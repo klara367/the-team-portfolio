@@ -24,25 +24,35 @@ const ProjectDetails = () => {
             <section>
                 <h2>{name}</h2>
                 <p className="details-anotation">{anotation}</p>
-                <p className="details-p details-description">{details.description}</p>
+                <p className="details-description">{details.description}</p>
                 <div className="btns-wrapper">
-                    <a href={demo} className="details-btn flex-center">Demo</a>
-                    <a href={documentation} className="details-btn flex-center">Dokumentace</a>
-                    <a href={marketing} className="details-btn flex-center">Marketing</a>
+                    <a href={demo} className="details-btn">Demo</a>
+                    <a href={documentation} className="details-btn">Dokumentace</a>
+                    <a href={marketing} className="details-btn">Marketing</a>
                 </div>
-                <p className="details-p details-heading">Vlastnosti</p>
-                {details.properties.map(p => <li className="details-p details-list">{p}</li>)}
-                <p className="details-p details-heading">Moduly</p>
-                {details.modules.map(p => <li className="details-p details-list">{p}</li>)}
-                <p className="details-p details-heading">Cílová skupina</p>
-                <p className="details-p target-group-p">{details.target_group}</p>
-                <p className="details-p details-heading">Role</p>
-                <p className="details-p role-heading">{details.roles[0]?.title}</p>
-                {details.roles[0]?.benefits.map(p => <li className="details-p role-list">{p}</li>)}
-                <p className="details-p role-heading">{details.roles[1]?.title}</p>
-                {details.roles[1]?.benefits.map(p => <li className="details-p role-list">{p}</li>)}
-                <p className="details-p role-heading">{details.roles[2]?.title}</p>
-                {details.roles[2]?.benefits.map(p => <li className="details-p role-list">{p}</li>)}
+                <div className="bg-card">
+                    <p className="details-heading">Cílová skupina</p>
+                    <p className="target-group-p">{details.target_group}</p>
+                </div>
+                <div className="two-cards-flex">
+                    <div className="bg-card">
+                        <p className="details-heading">Vlastnosti</p>
+                        <ul>{details.properties.map(p => <li className="details-list">{p}</li>)}</ul>
+                    </div>
+                    <div className="bg-card">
+                        <p className="details-heading">Moduly</p>
+                        <ul>{details.modules.map(p => <li className="details-list">{p}</li>)}</ul>
+                    </div>
+                </div>
+                <div className="bg-card">
+                    <p className="details-heading">Role</p>
+                    <p className="role-heading">{details.roles[0]?.title}</p>
+                    <ul>{details.roles[0]?.benefits.map(benefit => <li className="role-list">{benefit}</li>)}</ul>
+                    <p className="role-heading">{details.roles[1]?.title}</p>
+                    <ul>{details.roles[1]?.benefits.map(benefit => <li className="role-list">{benefit}</li>)}</ul>
+                    <p className="role-heading">{details.roles[2]?.title}</p>
+                    <ul>{details.roles[2]?.benefits.map(benefit => <li className="role-list">{benefit}</li>)}</ul>
+                </div>
             </section>
             <section>
                 <div className="gallery-flex">
