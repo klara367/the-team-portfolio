@@ -22,7 +22,7 @@
     pointer-events: none;
     user-select: none;
     padding-inline: 1rem;
-    width: 80%;
+    max-width: 80%;
 }
 
 .fullscreen-img-wrapper__p {
