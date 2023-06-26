@@ -29,7 +29,7 @@ const Portfolio = () => {
                     </article>
                 })} 
             </section>
-            {show &&
+            {show ?
                 <Description 
                     demo={demo}
                     details={details.description}
@@ -37,7 +37,14 @@ const Portfolio = () => {
                     images={images[0].image}
                     marketing={marketing}
                     name={name}
-                />
+                /> : 
+                <section id="description">
+                    <div className="description-wrapper">
+                        <img src="https://placehold.co/1300x700/silver/gray" alt="About company" />
+                        <p className="fw-600 name">The Team</p>
+                        <p className="details">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nulla quis diam. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Maecenas libero. Fusce dui leo, imperdiet in, aliquam sit amet, feugiat eu, orci. Duis sapien nunc, commodo et, interdum suscipit, sollicitudin et, dolor.</p>
+                    </div>
+                </section>
             }
         </main>
     )
