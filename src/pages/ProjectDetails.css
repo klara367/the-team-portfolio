@@ -1,7 +1,13 @@
 .details-main {
     padding-top: 3.5rem;
+    gap: 6rem;
     align-items: flex-start;
     line-height: 1.5;
+}
+
+.header-flex {
+    justify-content: space-between;
+    padding-bottom: 2rem;
 }
 
 .gallery-flex{
@@ -21,6 +27,7 @@ h2 {
 
 .details-description {
     line-height: 1.75;
+    padding-bottom: 3rem;
 }
 
 .details-heading {
@@ -31,12 +38,12 @@ h2 {
     border-bottom: 1px solid var(--accent-clr);
 }
 
-.bg-card {
+/* .bg-card {
     background-color: var(--secondary-bg-light-clr);
     padding: 2rem;
     border-radius: 3px;
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0,0,0,.06);
-}
+} */
 
 .two-cards-flex {
     display: flex;
@@ -73,50 +80,46 @@ ul {
 
 .btns-wrapper {
     display: flex;
-    gap: 1rem;
-    padding-top: 4rem;
-    padding-bottom: 8rem;
+    gap: 0.5rem;
+    /* padding-top: 4rem;
+    padding-bottom: 8rem; */
 }
 
 .details-btn {
     display: flex;
     justify-content: center;
-    padding: 0.8rem 1.3rem;
-    border: 1px solid var(--accent-clr);
-    border-radius: 3px;
-    gap: 0.5rem;
+    padding: 0.5rem 0.8rem;
     background-color: white;
     color: var(--accent-clr);
     transition: all ease 0.25s;
 }
 
-.details-btn:first-child,
 .details-btn:hover,
 .details-btn:active {
-    background-color: var(--accent-clr);
-    color: white;
-}
-
-.details-btn:first-child:hover,
-.details-btn:first-child:active {
-    background-color: #880907;
+    box-shadow: 0 0 0.5rem 0.1rem var(--border-light-clr);
 }
 
 .gallery {
     flex-wrap: wrap;
     justify-content: center;
-    gap: 1.5rem;
+    gap: 2rem;
 }
 
 .gallery__img {
     cursor: pointer;
-    width: 12rem;
+    width: 25rem;
     display: block;
     box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.24);
 }
 
 .gallery__img img {
     display: block;
+}
+
+.img-title {
+    text-align: center;
+    padding-top: 0.75rem;
+    color: var(--secondary-text-lighter-clr);
 }
 
 .gallery__img:hover {
@@ -138,21 +141,12 @@ ul {
         grid-template-rows: 1fr fit-content(1fr);
     }
 
-    .btns-wrapper {
+    .header-flex {
         flex-direction: column;
-        align-items: center;
-        padding-bottom: 6rem;
-    }
-
-    .details-btn {
-        width: 70vw;
+        padding-top: 2rem;
     }
 
     h2 {
         font-size: 1.5rem;
-    }
-
-    .gallery__img {
-        width: 8rem;
     }
 }

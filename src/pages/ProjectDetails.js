@@ -22,14 +22,16 @@ const ProjectDetails = () => {
     return (
         <main className="details-main">
             <section>
-                <h2>{name}</h2>
+                <div className="flex-center header-flex">
+                    <h2>{name}</h2>
+                    <div className="btns-wrapper">
+                        <a href={demo} className="details-btn">Demo</a>
+                        <a href={documentation} className="details-btn">Dokumentace</a>
+                        <a href={marketing} className="details-btn">Marketing</a>
+                    </div>
+                </div>
                 <p className="details-anotation">{anotation}</p>
                 <p className="details-description">{details.description}</p>
-                <div className="btns-wrapper">
-                    <a href={demo} className="details-btn">Demo</a>
-                    <a href={documentation} className="details-btn">Dokumentace</a>
-                    <a href={marketing} className="details-btn">Marketing</a>
-                </div>
                 <div className="bg-card">
                     <p className="details-heading">Cílová skupina</p>
                     <p className="target-group-p">{details.target_group}</p>
@@ -58,8 +60,11 @@ const ProjectDetails = () => {
                 <div className="gallery-flex">
                     <div className="gallery flex-center">
                         {images && images.map((img, index) => {
-                            return <div key={index} className="gallery__img">
+                            return <div key={index}>
+                                <div className="gallery__img">
                                 <img src={img.image} alt={img.title} onClick={() => handleOpenModal(index)}/>
+                                </div>
+                                <p className="img-title">{img.title}</p>
                             </div>
                         })}
                     </div>
