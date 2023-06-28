@@ -11,31 +11,31 @@ html {
     border-radius: 3px;
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0,0,0,.06);
 }
-
-.btn-wrapper {
-    display: flex;
-    justify-content: space-around;
-    padding-top: 2rem;
-}
   
 .description-wrapper img {
     border-radius: 3px;
 }
-  
-.description-btn {
-    padding: 0.7rem 1rem;
-    border: 1px solid var(--border-light-clr);
-    border-radius: 5px;
-    gap: 0.5rem;
-    background-color: var(--white-clr);
+
+.name {
+    color: var(--accent-clr);
 }
 
 .details {
     font-size: 0.9rem;
 }
 
-.name {
-    color: var(--accent-clr);
+.btn-wrapper {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 2rem;
+}
+
+.description-btn {
+    padding: 0.7rem 1rem;
+    border: 1px solid var(--border-light-clr);
+    border-radius: 5px;
+    gap: 0.5rem;
+    background-color: var(--white-clr);
 }
 
 .description-btn:hover,

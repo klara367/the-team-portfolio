@@ -69,7 +69,7 @@ const ProjectDetails = () => {
                                 <div className="gallery__img">
                                 <img src={img.image} alt={img.title} onClick={() => handleOpenModal(index)}/>
                                 </div>
-                                <p className="img-title">{img.title}</p>
+                                <p className="gallery__img-title">{img.title}</p>
                             </div>
                         })}
                     </div>

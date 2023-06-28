@@ -15,7 +15,7 @@ const Portfolio = () => {
         .catch(err => console.log(err.message))
     }, [])
 
-    const handleClick = (id) => {
+    const handleHover = (id) => {
         setShow(true)
         setProjectID(id)
     }
@@ -27,7 +27,7 @@ const Portfolio = () => {
             <section>
                 {portfolioData.map((project, index) => {
                     const { name, anotation } = project
-                    return <article onMouseOver={() => handleClick(index)} key={name} className="flex-center">
+                    return <article onMouseOver={() => handleHover(index)} key={name} className="flex-center">
                         <a href="#description">
                             <p className="fw-600 p-mobile-width product-name">{name}</p>
                             <p className="anotation">{anotation}</p>
