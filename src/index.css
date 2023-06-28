@@ -32,7 +32,7 @@ main {
     justify-content: space-between;
     grid-template-columns: 1.25fr 0.75fr;
     padding: 3rem;
-    gap: 10rem;
+    gap: 9rem;
     background-color: var(--white-clr);
 }
 
