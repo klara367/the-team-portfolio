@@ -1,6 +1,6 @@
 article {
   justify-content: space-between;
-  gap: 4rem;
+  gap: 5rem;
   padding-block: 1.25rem;
   border-bottom: 1px solid var(--border-light-clr);
   cursor: pointer;
@@ -34,6 +34,10 @@ article:active {
 
   .anotation {
     display: none;
+  }
+
+  article {
+    gap: 0;
   }
 
   article:hover,
