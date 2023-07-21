@@ -21,7 +21,7 @@
         "demo": "#",
         "marketing": "#",
         "images": [
-            {"image": "../TeamFleet-img/Bus_Ilustration.jpg", "title": "Autobus" },
+            {"image": "../TeamFleet-img/Bus_Ilustration.jpg", "title": "Ilustrační obrázek" },
             {"image": "../TeamFleet-img/Maintenance.png", "title": "Údržba vozidla" },
             {"image": "../TeamFleet-img/Open_Issues.png", "title": "Záznam problémů" },
             {"image": "../TeamFleet-img/Vehicle_Detail.png", "title": "Detail vozidla" },
